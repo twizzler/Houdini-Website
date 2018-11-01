@@ -22,7 +22,7 @@ You can add me on discord for more help: Twizzler#1054
   - mysql-python
 
 # Screenshots
-![Home](https://imgur.com/owdz7g4 "Home")
-![FAQ](https://imgur.com/4PC5xBr "FAQ")
-![Panel Login](https://imgur.com/nnegUCk "Panel Login")
-![Inside the panel](https://imgur.com/5xAEXhq "Inside the panel")
+![Home](https://i.imgur.com/owdz7g4.jpg "Home")
+![FAQ](https://imgur.com/4PC5xBr.jpg "FAQ")
+![Panel Login](https://imgur.com/nnegUCk.jpg "Panel Login")
+![Inside the panel](https://imgur.com/5xAEXhq.jpg "Inside the panel")
