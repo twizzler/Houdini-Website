@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "MyriadWebProBold";
+    src: url(../../fonts/myriadpro2-webfont.eot);
+    src: url(../../fonts/myriadpro2-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/myriadpro2-webfont.woff) format("woff"), url(../../fonts/myriadpro2-webfont.ttf) format("truetype"), url(../../fonts/myriadpro2-webfont.svg#MyriadProBold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "MyriadWebProItalic";
+    src: url(../../fonts/myriadproit2-webfont.eot);
+    src: url(../../fonts/myriadproit2-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/myriadproit2-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriadproit2-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriadproit2-webfont.svg#MyriadProItalic) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "MyriadWebProRegular";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriad2-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriad2-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriad2-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriad2-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/myriad2-webfont.svg#Myriad-Regular) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_regular";
+    src: url(../../fonts/ProximaNova-Reg-webfont.eot);
+    src: url(../../fonts/ProximaNova-Reg-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/ProximaNova-Reg-webfont.woff2) format("woff2"), url(../../fonts/ProximaNova-Reg-webfont.woff) format("woff"), url(../../fonts/ProximaNova-Reg-webfont.ttf) format("truetype"), url(../../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_regular) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_italic";
+    src: url(../../fonts/ProximaNova-Reg-webfont.eot/ProximaNova-RegIt-webfont.eot);
+    src: url(../../fonts/ProximaNova-Reg-webfont.eot/ProximaNova-RegIt-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/ProximaNova-RegIt-webfont.woff2) format("woff2"), url(../../fonts/ProximaNova-RegIt-webfont.woff) format("woff"), url(../../fonts/ProximaNova-RegIt-webfont.ttf) format("truetype"), url(../../fonts/ProximaNova-RegIt-webfont.svg#proxima_nova_italic) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_semibold";
+    src: url(../../fonts/ProximaNova-Sbold-webfont.eot);
+    src: url(../../fonts/ProximaNova-Sbold-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/ProximaNova-Sbold-webfont.woff2) format("woff2"), url(../../fonts/ProximaNova-Sbold-webfont.woff) format("woff"), url(../../fonts/ProximaNova-Sbold-webfont.ttf) format("truetype"), url(../../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_semibold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_bold";
+    src: url(../../fonts/ProximaNova-Bold-webfont.eot);
+    src: url(../../fonts/ProximaNova-Bold-webfont.eot#iefix) format("embedded-opentype"), url(../../fonts/ProximaNova-Bold-webfont.woff2) format("woff2"), url(../../fonts/ProximaNova-Bold-webfont.woff) format("woff"), url(../../fonts/ProximaNova-Bold-webfont.ttf) format("truetype"), url(../../fonts/ProximaNova-Bold-webfont.svg#proxima_nova_bold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_bold_italic";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNova-BoldIt-webfont.svg#proxima_nova_bold_italic) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_cn_regular";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Reg-webfont.svg#proxima_nova_cn_regular) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_cn_italic";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-RegIt-webfont.svg#proxima_nova_cn_italic) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_cn_semibold";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-SBold-webfont.svg#proxima_nova_cn_semibold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_cn_bold";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-Bold-webfont.svg#proxima_nova_cn_bold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+@font-face {
+    font-family: "proxima_nova_cn_bold_italic";
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.eot);
+    src: url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.eot#iefix) format("embedded-opentype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.woff2) format("woff2"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.woff) format("woff"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.ttf) format("truetype"), url(http://web.archive.org/web/20160115053821im_/http://www.clubpenguin.com/sites/default/themes/club_penguin/fonts/ProximaNovaCond-BoldIt-webfont.svg#proxima_nova_condensedBdIt) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+/*
+     FILE ARCHIVED ON 05:38:21 Jan 15, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:16:26 Aug 22, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 225.69 (3)
+  esindex: 0.009
+  captures_list: 265.871
+  CDXLines.iter: 15.718 (3)
+  PetaboxLoader3.datanode: 326.654 (5)
+  exclusion.robots: 0.468
+  exclusion.robots.policy: 0.448
+  RedisCDXSource: 0.839
+  PetaboxLoader3.resolve: 228.27
+  load_resource: 335.12
+*/
