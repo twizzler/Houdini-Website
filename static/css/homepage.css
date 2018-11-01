@@ -1,0 +1,1585 @@
+#cdn-integration-page-stats {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 10px;
+    color: #fff
+    }
+#cdn-integration-page-stats > .item-list {
+    width: 940px;
+    margin: 0 10px
+    }
+#cdn-integration-page-stats > .item-list h3 {
+    font-size: 12px;
+    margin-bottom: 5px
+    }
+body {
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #616161;
+    font-size: 16px;
+    line-height: 21px
+    }
+b, strong {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal
+    }
+em, i {
+    font-family: "proxima_nova_italic", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal
+    }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: -0.05em;
+    text-rendering: optimizelegibility
+    }
+h1 {
+    font-size: 30px;
+    line-height: 34px;
+    color: #0051af;
+    padding-bottom: 18px
+    }
+h1#page-title em {
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding-right: 12px
+    }
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #616161;
+    padding-bottom: 10px
+    }
+h2 a {
+    color: #616161;
+    text-decoration: none
+    }
+h2 a:hover {
+    color: #616161;
+    text-decoration: underline
+    }
+h3 {
+    font-size: 18px
+    }
+h4 {
+    font-size: 14px
+    }
+h5 {
+    font-size: 12px
+    }
+h6 {
+    font-size: 11px;
+    text-transform: uppercase
+    }
+ul {
+    padding-left: 16px;
+    margin: 0
+    }
+ul li {
+    list-style: disc outside;
+    margin: 5px 0
+    }
+ol {
+    padding-left: 16px;
+    margin: 0
+    }
+ol li {
+    list-style: decimal inside;
+    margin: 5px 0
+    }
+.item-list ul.pager {
+    color: #22a4f3;
+    font-size: 16px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: right
+    }
+.item-list ul.pager li {
+    -moz-kit-border-radius: 4px;
+    -web-kit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 5px 2px;
+    padding: 8px 0
+    }
+.item-list ul.pager li a {
+    color: #22a4f3;
+    text-decoration: none;
+    display: inline-block;
+    -moz-kit-border-radius: 4px;
+    -web-kit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 8px
+    }
+.item-list ul.pager li a:link, .item-list ul.pager li a:visited {
+    color: #22a4f3;
+    text-decoration: none
+    }
+.item-list ul.pager li a:hover, .item-list ul.pager li a:focus {
+    text-decoration: none
+    }
+.item-list ul.pager li:hover {
+    background: #eee
+    }
+.item-list ul.pager li.pager-current {
+    background: #eee;
+    padding: 8px
+    }
+.item-list ul.pager li.pager-next, .item-list ul.pager li.pager-all {
+    background: #eee;
+    margin: 5px
+    }
+.item-list ul.pager li.pager-ellipsis:hover {
+    background: 0
+    }
+.more-link {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px
+    }
+.more-link a {
+    color: #00adef;
+    text-decoration: none
+    }
+.more-link a:link, .more-link a:visited {
+    color: #00adef;
+    text-decoration: none
+    }
+.more-link a:hover, .more-link a:focus {
+    color: #0051af;
+    text-decoration: none
+    }
+#cboxOverlay {
+    opacity: 0.6 !important;
+    background: black
+    }
+#cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: visible
+    }
+#colorbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: visible;
+    padding: 0
+    }
+#cboxContent {
+    background: white;
+    overflow: visible;
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px
+    }
+#cboxClose {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) 0 -490px no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    display: none
+    }
+#cboxTopLeft {
+    width: 0;
+    height: 0
+    }
+#cboxTopCenter {
+    height: 0
+    }
+#cboxTopRight {
+    width: 0;
+    height: 0
+    }
+#cboxMiddleLeft {
+    width: 0
+    }
+#cboxMiddleRight {
+    width: 0
+    }
+#cboxLoadedContent {
+    margin-bottom: 0
+    }
+#cboxWrapper {
+    background: transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(http://web.archive.org/web/20160115140547im_/http://clubpenguinimg-a.akamaihd.net/sites/default/files/fc_http/sites/default/themes/club_penguin/css/pie/PIE.htc)
+    }
+#cboxContent {
+    background: transparent;
+    overflow: visible;
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff
+    }
+#cboxLoadedContent {
+    background: #22a4f3;
+    border: 4px solid #21c0f0;
+    margin: 22px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(http://web.archive.org/web/20160115140547im_/http://clubpenguinimg-a.akamaihd.net/sites/default/files/fc_http/sites/default/themes/club_penguin/css/pie/PIE.htc);
+    overflow: hidden
+    }
+#cboxLoadedContent h2 {
+    color: #fff;
+    background: #018ae4;
+    padding: 15px 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px
+    }
+#cboxLoadedContent .download_link, #cboxLoadedContent .download_text {
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px
+    }
+#cboxLoadedContent .download_link .button, #cboxLoadedContent .download_text .button {
+    margin: 0 0 0 20px
+    }
+#cboxPrevious {
+    position: absolute;
+    bottom: 43%;
+    left: 40px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) -47px -550px no-repeat;
+    width: 22px;
+    height: 50px;
+    text-indent: -9999px
+    }
+#cboxNext {
+    position: absolute;
+    bottom: 43%;
+    left: auto;
+    right: 30px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) -47px -490px no-repeat;
+    width: 22px;
+    height: 50px;
+    text-indent: -9999px
+    }
+#cboxCurrent {
+    display: none !important
+    }
+.hidden-item {
+    display: none
+    }
+#cdn-integration-page-stats {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 10px;
+    color: #fff
+    }
+#cdn-integration-page-stats > .item-list {
+    width: 940px;
+    margin: 0 10px
+    }
+#cdn-integration-page-stats > .item-list h3 {
+    font-size: 12px;
+    margin-bottom: 5px
+    }
+body {
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #616161;
+    font-size: 16px;
+    line-height: 21px
+    }
+b, strong {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal
+    }
+em, i {
+    font-family: "proxima_nova_italic", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal
+    }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: -0.05em;
+    text-rendering: optimizelegibility
+    }
+h1 {
+    font-size: 30px;
+    line-height: 34px;
+    color: #0051af;
+    padding-bottom: 18px
+    }
+h1#page-title em {
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding-right: 12px
+    }
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #616161;
+    padding-bottom: 10px
+    }
+h2 a {
+    color: #616161;
+    text-decoration: none
+    }
+h2 a:hover {
+    color: #616161;
+    text-decoration: underline
+    }
+h3 {
+    font-size: 18px
+    }
+h4 {
+    font-size: 14px
+    }
+h5 {
+    font-size: 12px
+    }
+h6 {
+    font-size: 11px;
+    text-transform: uppercase
+    }
+ul {
+    padding-left: 16px;
+    margin: 0
+    }
+ul li {
+    list-style: disc outside;
+    margin: 5px 0
+    }
+ol {
+    padding-left: 16px;
+    margin: 0
+    }
+ol li {
+    list-style: decimal inside;
+    margin: 5px 0
+    }
+.item-list ul.pager {
+    color: #22a4f3;
+    font-size: 16px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: right
+    }
+.item-list ul.pager li {
+    -moz-kit-border-radius: 4px;
+    -web-kit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 5px 2px;
+    padding: 8px 0
+    }
+.item-list ul.pager li a {
+    color: #22a4f3;
+    text-decoration: none;
+    display: inline-block;
+    -moz-kit-border-radius: 4px;
+    -web-kit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 8px
+    }
+.item-list ul.pager li a:link, .item-list ul.pager li a:visited {
+    color: #22a4f3;
+    text-decoration: none
+    }
+.item-list ul.pager li a:hover, .item-list ul.pager li a:focus {
+    text-decoration: none
+    }
+.item-list ul.pager li:hover {
+    background: #eee
+    }
+.item-list ul.pager li.pager-current {
+    background: #eee;
+    padding: 8px
+    }
+.item-list ul.pager li.pager-next, .item-list ul.pager li.pager-all {
+    background: #eee;
+    margin: 5px
+    }
+.item-list ul.pager li.pager-ellipsis:hover {
+    background: 0
+    }
+.more-link {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px
+    }
+.more-link a {
+    color: #00adef;
+    text-decoration: none
+    }
+.more-link a:link, .more-link a:visited {
+    color: #00adef;
+    text-decoration: none
+    }
+.more-link a:hover, .more-link a:focus {
+    color: #0051af;
+    text-decoration: none
+    }
+#cboxOverlay {
+    opacity: 0.6 !important;
+    background: black
+    }
+#cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: visible
+    }
+#colorbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: visible;
+    padding: 0
+    }
+#cboxContent {
+    background: white;
+    overflow: visible;
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px
+    }
+#cboxClose {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) 0 -490px no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    display: none
+    }
+#cboxTopLeft {
+    width: 0;
+    height: 0
+    }
+#cboxTopCenter {
+    height: 0
+    }
+#cboxTopRight {
+    width: 0;
+    height: 0
+    }
+#cboxMiddleLeft {
+    width: 0
+    }
+#cboxMiddleRight {
+    width: 0
+    }
+#cboxLoadedContent {
+    margin-bottom: 0
+    }
+#cboxWrapper {
+    background: transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(http://web.archive.org/web/20160115140547im_/http://clubpenguinimg-a.akamaihd.net/sites/default/files/fc_http/sites/default/themes/club_penguin/css/pie/PIE.htc)
+    }
+#cboxContent {
+    background: transparent;
+    overflow: visible;
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff
+    }
+#cboxLoadedContent {
+    background: #22a4f3;
+    border: 4px solid #21c0f0;
+    margin: 22px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(http://web.archive.org/web/20160115140547im_/http://clubpenguinimg-a.akamaihd.net/sites/default/files/fc_http/sites/default/themes/club_penguin/css/pie/PIE.htc);
+    overflow: hidden
+    }
+#cboxLoadedContent h2 {
+    color: #fff;
+    background: #018ae4;
+    padding: 15px 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px
+    }
+#cboxLoadedContent .download_link, #cboxLoadedContent .download_text {
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px
+    }
+#cboxLoadedContent .download_link .button, #cboxLoadedContent .download_text .button {
+    margin: 0 0 0 20px
+    }
+#cboxPrevious {
+    position: absolute;
+    bottom: 43%;
+    left: 40px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) -47px -550px no-repeat;
+    width: 22px;
+    height: 50px;
+    text-indent: -9999px
+    }
+#cboxNext {
+    position: absolute;
+    bottom: 43%;
+    left: auto;
+    right: 30px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/sprite.png) -47px -490px no-repeat;
+    width: 22px;
+    height: 50px;
+    text-indent: -9999px
+    }
+#cboxCurrent {
+    display: none !important
+    }
+.hidden-item {
+    display: none
+    }
+a.cp-button-secondary {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlZjJmNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #fefeff), color-stop(100%, #eef2f4));
+    background-image: -moz-linear-gradient(#fefeff, #eef2f4);
+    background-image: -webkit-linear-gradient(#fefeff, #eef2f4);
+    background-image: linear-gradient(#fefeff, #eef2f4);
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    color: #22a4f3;
+    font-size: 16px;
+    text-decoration: none !important;
+    border: 1px solid #d5dde1;
+    border-width: 1px 1px 3px
+    }
+a.cp-button-secondary:hover {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjlmYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZkZmRmZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #f8f9fb), color-stop(100%, #fdfdfe));
+    background-image: -moz-linear-gradient(#f8f9fb, #fdfdfe);
+    background-image: -webkit-linear-gradient(#f8f9fb, #fdfdfe);
+    background-image: linear-gradient(#f8f9fb, #fdfdfe);
+    color: #22a4f3
+    }
+a.cp-button-play-feature {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTk5MSIvPjxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjZmZkYzRmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZjYzAwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, -moz-linear-gradient(270deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, -webkit-linear-gradient(270deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, linear-gradient(-180deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    -moz-box-shadow: #b89300 0 4px 0, rgba(0, 0, 0, 0.2) 0 6px 0;
+    -webkit-box-shadow: #b89300 0 4px 0, rgba(0, 0, 0, 0.2) 0 6px 0;
+    box-shadow: #b89300 0 4px 0, rgba(0, 0, 0, 0.2) 0 6px 0;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #6e4e00;
+    text-decoration: none !important;
+    border: 2px solid #ffe991
+    }
+a.cp-button-play-feature:hover {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTk5MSIvPjxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjZmZkYzRmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZjYzAwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, -moz-linear-gradient(90deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, -webkit-linear-gradient(90deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, linear-gradient(0deg, #ffe991 0, #ffdc4f 10%, #fc0 100%);
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0;
+    margin-top: 4px
+    }
+a.cp-button-play {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTQ3NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, -moz-linear-gradient(270deg, #ffe477 0, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, -webkit-linear-gradient(270deg, #ffe477 0, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center 0, linear-gradient(-180deg, #ffe477 0, #fc0 100%);
+    -moz-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    -webkit-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #6e4e00;
+    text-decoration: none !important;
+    text-shadow: #fff 0 1px 0;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+    border: 1px solid #ff9d00
+    }
+a.cp-button-play:link, a.cp-button-play:visited {
+    color: #6e4e00
+    }
+a.cp-button-play:hover {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTQ3NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, -moz-linear-gradient(90deg, #ffe477 0, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, -webkit-linear-gradient(90deg, #ffe477 0, #fc0 100%);
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/button-shine-play.png) no-repeat center -100px, linear-gradient(0deg, #ffe477 0, #fc0 100%)
+    }
+a.cp-button-yellow {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTQ3NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #ffe477 0, #fc0 100%);
+    background: -webkit-linear-gradient(270deg, #ffe477 0, #fc0 100%);
+    background: linear-gradient(-180deg, #ffe477 0, #fc0 100%);
+    -moz-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    -webkit-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #6e4e00;
+    text-decoration: none !important;
+    text-shadow: #fff 0 1px 0;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+    border: 1px solid #604e3f
+    }
+a.cp-button-yellow:link, a.cp-button-yellow:visited {
+    color: #6e4e00
+    }
+a.cp-button-yellow:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTQ3NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(90deg, #ffe477 0, #fc0 100%);
+    background: -webkit-linear-gradient(90deg, #ffe477 0, #fc0 100%);
+    background: linear-gradient(0deg, #ffe477 0, #fc0 100%)
+    }
+a.cp-button-blue {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyYTRmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNDA5MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #22a4f3 0, #004093 100%);
+    background: -webkit-linear-gradient(270deg, #22a4f3 0, #004093 100%);
+    background: linear-gradient(-180deg, #22a4f3 0, #004093 100%);
+    -moz-box-shadow: 0 3px 0 0 rgba(0, 82, 175, 0.4), inset 0 2px 0 0 rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 82, 175, 0.4), inset 0 2px 0 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 3px 0 0 rgba(0, 82, 175, 0.4), inset 0 2px 0 0 rgba(255, 255, 255, 0.4);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none !important;
+    border: 1px solid #003f72
+    }
+a.cp-button-blue:link, a.cp-button-blue:visited {
+    color: #fff
+    }
+a.cp-button-blue:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDA5MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyYTRmMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #004093 0, #22a4f3 100%);
+    background: -webkit-linear-gradient(270deg, #004093 0, #22a4f3 100%);
+    background: linear-gradient(-180deg, #004093 0, #22a4f3 100%)
+    }
+a.cp-button-dark-blue {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNmFiZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNDA5MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #006abd 0, #004093 100%);
+    background: -webkit-linear-gradient(270deg, #006abd 0, #004093 100%);
+    background: linear-gradient(-180deg, #006abd 0, #004093 100%);
+    -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 1px 0 rgba(126, 225, 255, 0.4);
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 1px 0 rgba(126, 225, 255, 0.4);
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 1px 0 rgba(126, 225, 255, 0.4);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none !important;
+    border: 1px solid #003f72
+    }
+a.cp-button-dark-blue:link, a.cp-button-dark-blue:visited {
+    color: #fff
+    }
+a.cp-button-dark-blue:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNDA5MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNmFiZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #004093 0, #006abd 100%);
+    background: -webkit-linear-gradient(270deg, #004093 0, #006abd 100%);
+    background: linear-gradient(-180deg, #004093 0, #006abd 100%)
+    }
+a.cp-button-green {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZlZDIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVkYjEwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #6ed200 0, #5db100 100%);
+    background: -webkit-linear-gradient(270deg, #6ed200 0, #5db100 100%);
+    background: linear-gradient(-180deg, #6ed200 0, #5db100 100%);
+    -moz-box-shadow: 0 3px 0 0 rgba(0, 62, 113, 0.3), inset 0 1px 1px 0 #ccff7d;
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 62, 113, 0.3), inset 0 1px 1px 0 #ccff7d;
+    box-shadow: 0 3px 0 0 rgba(0, 62, 113, 0.3), inset 0 1px 1px 0 #ccff7d;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-color: #003f72;
+    border-color: rgba(0, 63, 114, 0.8);
+    transition: all 200ms ease
+    }
+a.cp-button-green:link, a.cp-button-green:visited {
+    color: #fff
+    }
+a.cp-button-green:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVkYjEwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZlZDIwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+    background: -moz-linear-gradient(270deg, #5db100 0, #6ed200 100%);
+    background: -webkit-linear-gradient(270deg, #5db100 0, #6ed200 100%);
+    background: linear-gradient(-180deg, #5db100 0, #6ed200 100%)
+    }
+a.cp-button-flat {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-color: #003f72;
+    border-color: rgba(0, 63, 114, 0.8);
+    transition: all 200ms ease
+    }
+a.cp-button-flat:hover {
+    background-color: #003f72;
+    background-color: rgba(0, 63, 114, 0.8)
+    }
+body {
+    font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0
+    }
+a {
+    text-decoration: none
+    }
+a:hover {
+    text-decoration: underline
+    }
+a img {
+    border: 0
+    }
+#billboards-holder {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background: #1596e4
+    }
+#billboards-holder #billboards {
+    width: 100%;
+    height: 500px
+    }
+#billboard-arrows #arrow-left, #billboard-arrows #arrow-right {
+    position: absolute;
+    z-index: 1000;
+    top: 150px;
+    width: 70px;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all ease 200ms;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/billboard-arrows.png) 0 center no-repeat
+    }
+#billboard-arrows #arrow-left:hover, #billboard-arrows #arrow-left.active, #billboard-arrows #arrow-right:hover, #billboard-arrows #arrow-right.active {
+    opacity: 1
+    }
+#billboard-arrows #arrow-left {
+    left: 20px
+    }
+#billboard-arrows #arrow-right {
+    right: 20px;
+    background-position: -70px center
+    }
+#billboard-nav {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2I3ZWVmZiIvPjxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMyMmE0ZjMiLz48c3RvcCBvZmZzZXQ9IjIyJSIgc3RvcC1jb2xvcj0iIzIyYTRmMyIvPjxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjMTE3YWQwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
+    background: -moz-linear-gradient(270deg, #b7eeff 1%, #22a4f3 1%, #22a4f3 22%, #117ad0 98%);
+    background: -webkit-linear-gradient(270deg, #b7eeff 1%, #22a4f3 1%, #22a4f3 22%, #117ad0 98%);
+    background: linear-gradient(-180deg, #b7eeff 1%, #22a4f3 1%, #22a4f3 22%, #117ad0 98%);
+    position: relative;
+    width: 100%;
+    height: 46px;
+    text-align: center
+    }
+#billboard-nav #indicators {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    width: 300px;
+    height: 46px;
+    margin: 0 auto
+    }
+#billboard-nav .indicator, #billboard-nav a {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1
+    }
+#billboard-nav .indicator {
+    padding-top: 7px
+    }
+#billboard-nav .indicator a {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    transition: all ease 200ms;
+    border-radius: 30px;
+    border: 1px solid #003f72;
+    box-shadow: 0 2px 0 0 rgba(0, 82, 175, 0.4), inset 0 1px 1px 0 #7ee1ff;
+    background-image: linear-gradient(-180deg, #22a4f3 0, #004093 100%)
+    }
+#billboard-nav .indicator a:hover, #billboard-nav .indicator a.active {
+    color: #003478;
+    text-decoration: none;
+    border: 1px solid #003f72;
+    box-shadow: 0 2px 0 0 rgba(0, 82, 175, 0.4), inset 0 -1px 1px 0 #fff;
+    background-image: linear-gradient(-179deg, #fff 3%, #acbcc4 100%)
+    }
+#membership-callout {
+    position: absolute;
+    top: 433px;
+    right: 15px;
+    z-index: 100
+    }
+a#buy-membership {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    padding-left: 45px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    background: url(../images/button-membership.png) 0 0 no-repeat;
+    box-sizing: border-box
+    }
+a#buy-membership:hover {
+    background-position: 0 -50px;
+    text-decoration: none
+    }
+.i18n-fr a#buy-membership {
+    letter-spacing: -0.03em
+    }
+#promo-blocks-wrap {
+    padding-bottom: 30px;
+    background: #0052af url(../images/promo-wrap-bg.png) 0 bottom no-repeat
+    }
+#promo-blocks {
+    overflow: hidden;
+    width: 980px;
+    height: 138px
+    }
+.promo-block {
+    position: relative;
+    float: left;
+    width: 490px;
+    height: 140px;
+    color: #fff
+    }
+.promo-block a {
+    color: #fff
+    }
+.promo-block.aqua {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/aqua.png) 0 0 no-repeat
+    }
+.promo-block.blue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/blue.png) 0 0 no-repeat
+    }
+.promo-block.darkblue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/dark_blue.png) 0 0 no-repeat
+    }
+.promo-block.forest {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/forrest.png) 0 0 no-repeat
+    }
+.promo-block.gray {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/gray.png) 0 0 no-repeat
+    }
+.promo-block.lime {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/lime.png) 0 0 no-repeat
+    }
+.promo-block.orange {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/orange.png) 0 0 no-repeat
+    }
+.promo-block.purple {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/purple.png) 0 0 no-repeat
+    }
+.promo-block.raspberry {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/raspberry.png) 0 0 no-repeat
+    }
+.promo-block.red {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/red.png) 0 0 no-repeat
+    }
+.promo-block-audio.aqua {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-aqua.png) 0 0 no-repeat
+    }
+.promo-block-audio.blue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-blue.png) 0 0 no-repeat
+    }
+.promo-block-audio.darkblue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-dark_blue.png) 0 0 no-repeat
+    }
+.promo-block-audio.forest {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-forrest.png) 0 0 no-repeat
+    }
+.promo-block-audio.gray {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-gray.png) 0 0 no-repeat
+    }
+.promo-block-audio.lime {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-lime.png) 0 0 no-repeat
+    }
+.promo-block-audio.orange {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-orange.png) 0 0 no-repeat
+    }
+.promo-block-audio.purple {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-purple.png) 0 0 no-repeat
+    }
+.promo-block-audio.raspberry {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-raspberry.png) 0 0 no-repeat
+    }
+.promo-block-audio.red {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-red.png) 0 0 no-repeat
+    }
+.promo-block.cfc_counter {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/coins-for-change.png) 0 0 no-repeat
+    }
+.de .promo-block.cfc_counter {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/coins-for-change-de.png) 0 0 no-repeat
+    }
+.fr .promo-block.cfc_counter {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/coins-for-change-fr.png) 0 0 no-repeat
+    }
+.es .promo-block.cfc_counter {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/coins-for-change-es.png) 0 0 no-repeat
+    }
+.pt .promo-block.cfc_counter {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/coins-for-change-pt.png) 0 0 no-repeat
+    }
+.promo-block .legal {
+    font-size: 10px
+    }
+.promo-info {
+    position: absolute;
+    bottom: 25px;
+    left: 214px;
+    height: 85px
+    }
+.promo-info .title {
+    color: #fff;
+    font-size: 16px;
+    width: 266px
+    }
+.promo-info .cta {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    min-height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 1em;
+    color: #fff;
+    padding-right: 30px;
+    margin-bottom: 5px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/common/promo-arrows.png) center right no-repeat
+    }
+.promo-image, .promo-video, .promo-image_text, .promo-itunes, .promo-image_copy, .promo-on_now, .promo-audio {
+    bottom: 12px;
+    height: 122px;
+    left: 5px;
+    position: absolute;
+    width: 122px
+    }
+.promo-on_now {
+    width: 490px;
+    top: 0;
+    left: 0
+    }
+.promo-on_now .on_now_label {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    display: block;
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 25px
+    }
+.promo-block-audio .promo-audio {
+    left: 13px;
+    bottom: 7px;
+    width: 135px
+    }
+.promo-block-audio .promo-info {
+    left: 167px;
+    bottom: 0;
+    width: 313px;
+    height: 140px
+    }
+.promo-block-audio .audio-container .title {
+    margin-top: 19px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff
+    }
+.promo-block-audio .sub-title, .promo-block-audio .jp-timers {
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 2px
+    }
+.promo-block-audio.purple .sub-title, .promo-block-audio.purple .jp-timers {
+    color: #22a4f3
+    }
+.promo-block-audio.lime .sub-title, .promo-block-audio.lime .jp-timers {
+    color: #117ad0
+    }
+.promo-block-audio.forest .sub-title, .promo-block-audio.forest .jp-timers {
+    color: #003f72
+    }
+.promo-block-audio.orange .sub-title, .promo-block-audio.orange .jp-timers {
+    color: #4f4781
+    }
+.promo-block-audio.aqua .sub-title, .promo-block-audio.aqua .jp-timers {
+    color: #4f4781
+    }
+.promo-block-audio.red .sub-title, .promo-block-audio.red .jp-timers {
+    color: #003f72
+    }
+.promo-block-audio.raspberry .sub-title, .promo-block-audio.raspberry .jp-timers {
+    color: #fff
+    }
+.promo-block-audio.blue .sub-title, .promo-block-audio.blue .jp-timers {
+    color: #c55e9b
+    }
+.promo-block-audio.darkblue .sub-title, .promo-block-audio.darkblue .jp-timers {
+    color: #ff9a00
+    }
+.promo-block-audio.gray .sub-title, .promo-block-audio.gray .jp-timers {
+    color: #117ad0
+    }
+.promo-block-audio .audio-container ul.jp-controls, .promo-block-audio .audio-container ul.jp-controls li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+    }
+.promo-block-audio .audio-container ul.jp-controls {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    height: 25px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    overflow: hidden;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px
+    }
+.promo-block-audio.purple .audio-container ul.jp-controls {
+    background-color: #584f8b
+    }
+.promo-block-audio.lime .audio-container ul.jp-controls {
+    background-color: #6f9b5a
+    }
+.promo-block-audio.forest .audio-container ul.jp-controls {
+    background-color: #769651
+    }
+.promo-block-audio.orange .audio-container ul.jp-controls {
+    background-color: #ca7f1e
+    }
+.promo-block-audio.aqua .audio-container ul.jp-controls {
+    background-color: #38bbad
+    }
+.promo-block-audio.red .audio-container ul.jp-controls {
+    background-color: #bf5055
+    }
+.promo-block-audio.raspberry .audio-container ul.jp-controls {
+    background-color: #c25a98
+    }
+.promo-block-audio.blue .audio-container ul.jp-controls {
+    background-color: #34b9e2
+    }
+.promo-block-audio.darkblue .audio-container ul.jp-controls {
+    background-color: #003f74
+    }
+.promo-block-audio.gray .audio-container ul.jp-controls {
+    background-color: #829faf
+    }
+.promo-block-audio .jp-controls a {
+    display: block;
+    text-decoration: none
+    }
+.promo-block-audio .jp-controls a span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px
+    }
+.promo-block-audio .jp-controls .jp-stop {
+    display: none
+    }
+.promo-block-audio .jp-controls a span.label {
+    text-align: center;
+    padding: 0 11px 0 10px
+    }
+.promo-block-audio .jp-controls a span.icon {
+    width: 30px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-controls.png) no-repeat 0 0
+    }
+.promo-block-audio.purple .jp-controls a span.icon {
+    background-color: #4e467d
+    }
+.promo-block-audio.lime .jp-controls a span.icon {
+    background-color: #668f51
+    }
+.promo-block-audio.forest .jp-controls a span.icon {
+    background-color: #6c8b4a
+    }
+.promo-block-audio.orange .jp-controls a span.icon {
+    background-color: #bf7314
+    }
+.promo-block-audio.aqua .jp-controls a span.icon {
+    background-color: #35b1a5
+    }
+.promo-block-audio.red .jp-controls a span.icon {
+    background-color: #b4494e
+    }
+.promo-block-audio.raspberry .jp-controls a span.icon {
+    background-color: #b5548d
+    }
+.promo-block-audio.blue .jp-controls a span.icon {
+    background-color: #28b1db
+    }
+.promo-block-audio.darkblue .jp-controls a span.icon {
+    background-color: #003a6a
+    }
+.promo-block-audio.gray .jp-controls a span.icon {
+    background-color: #7a96a4
+    }
+.promo-block-audio .jp-controls .jp-play span.icon {
+    background-position: 12px 7px
+    }
+.promo-block-audio .jp-controls .jp-pause span.icon {
+    background-position: 12px -23px
+    }
+.promo-block-audio .audio-container .jp-progress {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 260px;
+    height: 15px;
+    margin-top: 12px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-controls.png) no-repeat 0 -110px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+    }
+.promo-block-audio.purple .audio-container .jp-progress {
+    background-position: 0 -106px
+    }
+.promo-block-audio.lime .audio-container .jp-progress {
+    background-position: 0 -126px
+    }
+.promo-block-audio.orange .audio-container .jp-progress {
+    background-position: 0 -146px
+    }
+.promo-block-audio.aqua .audio-container .jp-progress {
+    background-position: 0 -166px
+    }
+.promo-block-audio.red .audio-container .jp-progress {
+    background-position: 0 -186px
+    }
+.promo-block-audio.raspberry .audio-container .jp-progress {
+    background-position: 0 -206px
+    }
+.promo-block-audio.blue .audio-container .jp-progress {
+    background-position: 0 -226px
+    }
+.promo-block-audio.darkblue .audio-container .jp-progress {
+    background-position: 0 -246px
+    }
+.promo-block-audio.gray .audio-container .jp-progress {
+    background-position: 0 -266px
+    }
+.promo-block-audio.forest .audio-container .jp-progress {
+    background-position: 0 -186px
+    }
+.promo-block-audio .audio-container .jp-progress .jp-seek-bar {
+    margin-left: 15px;
+    max-width: 244px !important
+    }
+.promo-block-audio .audio-container .jp-progress .jp-seek-bar:hover {
+    cursor: pointer
+    }
+.promo-block-audio .audio-container .jp-progress .jp-play-bar {
+    width: 0;
+    height: 15px;
+    text-align: right;
+    position: relative;
+    padding-left: 1px;
+    overflow: visible !important;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-controls.png) no-repeat right -86px;
+    max-width: 244px !important
+    }
+.promo-block-audio .audio-container .jp-progress .jp-scrubber {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+    float: right;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/audio-controls.png) no-repeat 0 -60px
+    }
+.promo-block-audio .audio-container .jp-timers {
+    letter-spacing: 2px;
+    text-align: right;
+    line-height: 1;
+    margin-top: 13px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45px;
+    height: 12px;
+    overflow: hidden
+    }
+.promo-block-audio .audio-container .jp-current-time {
+    display: none
+    }
+.promo-block-audio .download-area {
+    margin-top: 24px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 32px
+    }
+.promo-block-audio .download-area .btn-download {
+    text-align: right;
+    display: block;
+    width: 210px;
+    height: 34px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/btn-download.png) no-repeat 0 0
+    }
+.promo-block-audio .download-area .btn-download span {
+    display: inline-block;
+    vertical-align: top;
+    width: 175px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-right: 7px
+    }
+.promo-block-audio.purple .download-area .btn-download {
+    background-position: 0 0
+    }
+.promo-block-audio.lime .download-area .btn-download {
+    background-position: 0 -40px
+    }
+.promo-block-audio.orange .download-area .btn-download {
+    background-position: 0 -80px
+    }
+.promo-block-audio.aqua .download-area .btn-download {
+    background-position: 0 -120px
+    }
+.promo-block-audio.red .download-area .btn-download {
+    background-position: 0 -160px
+    }
+.promo-block-audio.raspberry .download-area .btn-download {
+    background-position: 0 -200px
+    }
+.promo-block-audio.blue .download-area .btn-download {
+    background-position: 0 -240px
+    }
+.promo-block-audio.darkblue .download-area .btn-download {
+    background-position: 0 -280px
+    }
+.promo-block-audio.gray .download-area .btn-download {
+    background-position: 0 -320px
+    }
+.promo-block-audio.forest .download-area .btn-download {
+    background-position: 0 -360px
+    }
+.fr .promo-on_now .on_now_label {
+    font-size: 9px
+    }
+.promo-on_now img {
+    margin-left: 5px;
+    margin-top: 5px
+    }
+.promo-on_now.aqua {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-aqua.png) 0 0 no-repeat
+    }
+.promo-on_now.blue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-blue.png) 0 0 no-repeat
+    }
+.promo-on_now.darkblue {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-dark_blue.png) 0 0 no-repeat
+    }
+.promo-on_now.forest {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-forrest.png) 0 0 no-repeat
+    }
+.promo-on_now.gray {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-gray.png) 0 0 no-repeat
+    }
+.promo-on_now.lime {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-lime.png) 0 0 no-repeat
+    }
+.promo-on_now.orange {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-orange.png) 0 0 no-repeat
+    }
+.promo-on_now.purple {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-purple.png) 0 0 no-repeat
+    }
+.promo-on_now.raspberry {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-raspberry.png) 0 0 no-repeat
+    }
+.promo-on_now.red {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/components/promo-boxes/onnow-red.png) 0 0 no-repeat
+    }
+.cfc_counter .cfc_total {
+    display: block;
+    font-size: 20px;
+    height: 42px;
+    margin: 78px 0 20px 34px;
+    text-align: right;
+    vertical-align: middle;
+    width: 420px
+    }
+.cfc_counter .cfc_total span {
+    display: inline-block;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    vertical-align: middle;
+    width: 38px
+    }
+.trigger-video {
+    cursor: pointer
+    }
+.download-from-itunes {
+    display: block;
+    text-indent: -9999px;
+    width: 189px;
+    height: 30px;
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/rebrand/btn-album-available-itunes.png) 0 0 no-repeat;
+    position: absolute;
+    left: 225px;
+    bottom: 50px
+    }
+.de .download-from-itunes {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/rebrand/de/btn-album-available-itunes.png) 0 0 no-repeat
+    }
+.es .download-from-itunes {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/rebrand/es/btn-album-available-itunes.png) 0 0 no-repeat
+    }
+.pt .download-from-itunes {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/rebrand/pt/btn-album-available-itunes.png) 0 0 no-repeat
+    }
+.fr .download-from-itunes {
+    background: url(http://web.archive.org/web/20160115140547im_/http://cpassets-a.akamaihd.net/sites/default/themes/club_penguin/img/rebrand/fr/btn-album-available-itunes.png) 0 0 no-repeat
+    }
+.download-from-itunes:hover {
+    background-position: 0 -30px
+    }
+.song-info .title {
+    color: #fff;
+    font-size: 19px;
+    font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    position: absolute;
+    left: 225px;
+    bottom: 90px
+    }
+.song-info .legalese {
+    color: #e4e4e4;
+    width: 220px;
+    font-size: 9px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 10px;
+    left: 225px;
+    line-height: 9px
+    }
+
+#overlay .form-item .error-msg, #overlay .form-item .error_msg, #overlay .form-item .success-msg {
+    font-family: 'proxima_nova_bold',Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 3px 0 0 rgba(0,62,113,0.3);
+    -webkit-box-shadow: 0 3px 0 0 rgba(0,62,113,0.3);
+    box-shadow: 0 3px 0 0 rgba(0,62,113,0.3);
+    position: absolute;
+    bottom: 58px;
+    left: 45px;
+    z-index: 10;
+    width: 245px;
+    padding: 6px 10px;
+    color: #0052AF;
+    font-size: 12px;
+    line-height: 1.1;
+    text-align: center;
+    border: 2px solid #FFBC3A;
+    background: none;
+    background-color: #FFBC3A;
+}
+
+#overlay .form-item .error-msg:after, #overlay .form-item .error_msg:after, #overlay .form-item .success-msg:after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    content: "";
+    line-height: 0;
+    font-size: 0;
+    left: 107px;
+    bottom: -15px;
+    border-left: 13px solid transparent;
+    border-top: 13px solid #FFBC3A;
+    border-right: 13px solid transparent;
+}
+
+#usernameError {
+    display: none;
+}
+
+#passwordError {
+    display: none;
+    bottom: 104px !important;
+}
+
+/*
+     FILE ARCHIVED ON 14:05:47 Jan 15, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:17:16 Aug 22, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 2400.84 (3)
+  esindex: 0.007
+  captures_list: 2419.349
+  CDXLines.iter: 14.486 (3)
+  PetaboxLoader3.datanode: 78.941 (4)
+  exclusion.robots: 0.294
+  exclusion.robots.policy: 0.283
+  RedisCDXSource: 0.481
+  PetaboxLoader3.resolve: 3941.864 (3)
+  load_resource: 1665.104
+*/
