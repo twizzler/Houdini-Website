@@ -1,0 +1,314 @@
+<html>
+   <head>
+      <title>Create Your Penguin | Fake Penguin</title>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/1.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/2.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/3.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/4.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/5.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create/css/6.css') }}">
+   </head>
+   <body class="html not-front not-logged-in page-penguin page-penguin-create full-page-flow i18n-en context-penguin theme-club_penguin omega-mediaqueries-processed browser-desktop responsive-layout-wide" style="background:url('https://cpsslassets-a.akamaihd.net/Evergreen-Background_6-1417729740_1.jpg') no-repeat scroll 50% 0px #e6e5ef">
+      <div id="omega-media-query-dummy">
+         <style media="all">#omega-media-query-dummy { position: relative; z-index: -1; }</style>
+         <!--[if (lt IE 9)&(!IEMobile)]>
+         <style media="all">#omega-media-query-dummy { z-index: 1; }</style>
+         <![endif]-->
+         <style media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">#omega-media-query-dummy { z-index: 0; }</style>
+         <style media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">#omega-media-query-dummy { z-index: 1; }</style>
+         <style media="all and (min-width: 1220px)">#omega-media-query-dummy { z-index: 2; }</style>
+      </div>
+      <div id="skip-link">
+         <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+      </div>
+      <div class="page clearfix" id="page">
+         <section id="section-content" class="section section-content">
+            <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">
+               <div id="zone-content" class="zone zone-content clearfix container-12">
+                  <div class="grid-12 region region-content" id="region-content">
+                     <div class="region-inner region-content-inner">
+                        <a id="main-content"></a>
+                        <h1 class="title" id="page-title">Create Your Penguin</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+                           <div class="block-inner clearfix">
+                              <div class="content clearfix">
+                                 <div id="overlay-wrapper" class="flow-game">
+                                    <div id="overlay" class="overlay-create">
+                                       <div id="overlay-header" class="penguin">
+                                          <div class="overlay-inner">
+                                             <span class="back modal-back" onclick="goBack();" id="backBtn"></span><span class="close modal-close" id="closeBtn"></span>
+                                             <h2 class="flow-title">Create Your Penguin</h2>
+                                          </div>
+                                       </div>
+                                       <div id="overlay-content">
+                                          <div class="overlay-inner">
+                                             <div id="create-form">
+                                                <form action="/penguin/create" method="post" id="penguin-create-form" accept-charset="UTF-8">
+                                                   <div>
+                                                      <input type="hidden" name="anon_token" value="vOdMDx0fXjHBsChVAAWLV83ca9SNiHsHA8NQesBEYV4">
+                                                      <div class="column-left form-wrapper" id="edit-column-left">
+                                                         <div class="row-wrapper">
+                                                            <div class="row">
+                                                               <div class="icon icon-color-selector"></div>
+                                                               <div id="paperdoll-wrap" class="paperdoll-wrap paperdoll-processed">
+                                                                  <div class="loader-wrap">
+                                                                     <div class="loader"></div>
+                                                                  </div>
+                                                                  <div id="penguin-paper-doll" class="paperdoll" style="opacity: 1;">
+                                                                     <div id="tip-box" class="tip-box">
+                                                                        <div class="tip-inner"></div>
+                                                                     </div>
+                                                                     <div id="edit-color" class="form-radios">
+                                                                        <div class="form-item form-type-radio form-item-color item-0-wrap">
+                                                                           <input type="radio" id="edit-color-6" name="color" value="6" class="form-radio">  <label class="option item-0 color-orange" for="edit-color-6">Orange </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-1-wrap">
+                                                                           <input type="radio" id="edit-color-11" name="color" value="11" class="form-radio">  <label class="option item-1 color-dark-green" for="edit-color-11">Dark Green </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-2-wrap">
+                                                                           <input type="radio" id="edit-color-13" name="color" value="13" class="form-radio">  <label class="option item-2 color-lime-green" for="edit-color-13">Lime Green </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-3-wrap">
+                                                                           <input type="radio" id="edit-color-7" name="color" value="7" class="form-radio">  <label class="option item-3 color-yellow" for="edit-color-7">Yellow </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-4-wrap">
+                                                                           <input type="radio" id="edit-color-10" name="color" value="10" class="form-radio">  <label class="option item-4 color-peach" for="edit-color-10">Peach </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-5-wrap">
+                                                                           <input type="radio" id="edit-color-9" name="color" value="9" class="form-radio">  <label class="option item-5 color-brown" for="edit-color-9">Brown </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-6-wrap">
+                                                                           <input type="radio" id="edit-color-5" name="color" value="5" class="form-radio">  <label class="option item-6 color-red" for="edit-color-5">Red </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-7-wrap">
+                                                                           <input type="radio" id="edit-color-4" name="color" value="4" class="form-radio">  <label class="option item-7 color-black" for="edit-color-4">Black </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-8-wrap">
+                                                                           <input type="radio" id="edit-color-1" name="color" value="1" class="form-radio">  <label class="option item-8 color-blue" for="edit-color-1">Blue </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-9-wrap">
+                                                                           <input type="radio" id="edit-color-12" name="color" value="12" class="form-radio">  <label class="option item-9 color-light-blue" for="edit-color-12">Light Blue </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-10-wrap">
+                                                                           <input type="radio" id="edit-color-2" name="color" value="2" class="form-radio">  <label class="option item-10 color-green" for="edit-color-2">Green </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-11-wrap">
+                                                                           <input type="radio" id="edit-color-16" name="color" value="16" class="form-radio">  <label class="option item-11 color-arctic-white" for="edit-color-16">Arctic White </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-12-wrap">
+                                                                           <input type="radio" id="edit-color-8" name="color" value="8" class="form-radio">  <label class="option item-12 color-dark-purple" for="edit-color-8">Dark Purple </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-13-wrap">
+                                                                           <input type="radio" id="edit-color-3" name="color" value="3" class="form-radio">  <label class="option item-13 color-pink" for="edit-color-3">Pink </label>
+                                                                        </div>
+                                                                        <div class="form-item form-type-radio form-item-color item-14-wrap">
+                                                                           <input type="radio" id="edit-color-15" name="color" value="15" checked="checked" class="form-radio">  <label class="option item-14 color-aqua checked" for="edit-color-15">Aqua </label>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row-wrapper">
+                                                            <div class="row-label">Create a Penguin Name</div>
+                                                            <div class="row">
+                                                               <div class="form-item form-type-textfield form-item-name">
+                                                                  <label for="edit-name">Penguin Name </label>
+                                                                  <span class="field-prefix">
+                                                                     <div id="name-error"></div>
+                                                                  </span>
+                                                                  <input autocomplete="off" type="text" id="edit-name" name="name" value="" size="60" maxlength="12" class="form-text ajax-processed">
+                                                                  <div class="description">
+                                                                     <p>You can enter 4-12 letters, numbers, or spaces.</p>
+                                                                     <p>Please don't use your real name or email address.</p>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="column-right form-wrapper" id="edit-column-right">
+                                                         <div class="row-wrapper">
+                                                            <div class="row-label">Create a Password</div>
+                                                            <div class="row">
+                                                               <div class="form-item form-type-password form-item-pass">
+                                                                  <label for="edit-pass">Password </label>
+                                                                  <span class="field-prefix">
+                                                                     <div id="pass-error"></div>
+                                                                  </span>
+                                                                  <input autocomplete="off" type="text" id="edit-pass" name="pass" size="60" maxlength="32" class="form-text ajax-processed">
+                                                                  <div class="description">
+                                                                     <p>You can enter 6-32 letters, numbers, or symbols.</p>
+                                                                     <p>Make sure it isn't easy to guess.</p>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row-wrapper">
+                                                            <div class="row">
+                                                               <div class="form-item form-type-checkbox form-item-pass-show">
+                                                                  <input checked="checked" type="checkbox" id="edit-pass-show" name="pass_show" value="1" class="form-checkbox">  <label class="option checked checkboxProcessed-processed" for="edit-pass-show">Show password: <span class="sp-val on">On</span> </label>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row-wrapper">
+                                                            <div class="row-label">Your Parent's Email</div>
+                                                            <div class="row">
+                                                               <div class="form-item form-type-textfield form-item-email">
+                                                                  <label for="edit-email">Parent Email </label>
+                                                                  <span class="field-prefix">
+                                                                     <div id="email-error"></div>
+                                                                  </span>
+                                                                  <input autocomplete="off" type="text" id="edit-email" name="email" value="" size="60" maxlength="254" class="form-text ajax-processed">
+                                                                  <div class="description">
+                                                                     <p>Make sure you've spelled the email address right.</p>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row-wrapper">
+                                                            <div class="row">
+                                                               <div class="form-item form-type-checkbox form-item-terms">
+                                                                  <span class="field-prefix">
+                                                                     <div id="terms-error"></div>
+                                                                  </span>
+                                                                  <input type="checkbox" id="edit-terms" name="terms" value="1" class="form-checkbox ajax-processed">  <label class="option checkboxProcessed-processed" for="edit-terms"><span class="icon icon-tou"></span><span class="tou-text">I agree to the <a href="http://www.clubpenguin.com/terms-of-use/en" target="blank" tabindex="-1">Terms of Use</a> and <a href="#club-penguin-rules-popup" id="club-penguin-rules" class="popup" tabindex="-1">Club Penguin Rules</a>.
+                                                                  For more information on our Privacy Policy, <a href="http://www.clubpenguin.com/privacy-policy/en" target="blank" tabindex="-1">click here</a>.</span> </label>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div id="captcha-wrapper" class="row-wrapper captcha-wrapper" style="opacity: 1;">
+                                                            <div class="captcha-closed"></div>
+                                                            <div class="row-label">Solve the captcha</span></div>
+                                                            <div class="row">
+                                                               <div class="form-item form-type-radios form-item-captcha">
+                                                                  <label for="edit-captcha"> </label>
+                                                                  <span class="field-prefix">
+                                                                     <div id="captcha-error"></div>
+                                                                  </span>
+                                                                  <div id="edit-captcha" class="form-radios">
+                                                                     <div class="form-item form-type-radio form-item-captcha">
+                                                                        <div id="recaptchaDiv" style="margin-left: -115px">
+                                                                           <div class="g-recaptcha" data-sitekey="6Lei8BMTAAAAAHJPbumNV5wjZJsY_8axnQvigdVt"></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div id="submit-wrapper" class="row-wrapper">
+                                                            <div class="preventer"></div>
+                                                            <div class="row"><input class="disabled form-submit" type="submit" id="edit-submit" name="op" value="Create Your Penguin" disabled=""></div>
+                                                         </div>
+                                                         <div class="row-wrapper">
+                                                            <div class="row">
+                                                               <p class="legal-text"></p>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <input type="hidden" name="form_build_id" value="">
+                                                      <input type="hidden" name="form_id" value="penguin_create_form">
+                                                   </div>
+                                                </form>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div id="club-penguin-rules-popup" class="popup-content">
+                                    <span class="close modal-inner-close"></span>
+                                    <div id="club-penguin-rules-wrapper">
+                                       <div id="rules-header">
+                                          <h1>Club Penguin Rules</h1>
+                                       </div>
+                                       <div class="rules-content">
+                                          <div id="rule-one">
+                                             <h3>Respect Others</h3>
+                                             <h4>No bullying or being mean to others</h4>
+                                          </div>
+                                          <div id="rule-two">
+                                             <h3>Chat Nicely</h3>
+                                             <h4>No rude or inappropriate language</h4>
+                                          </div>
+                                          <div id="rule-three">
+                                             <h3>Stay Safe Online</h3>
+                                             <h4>No sharing of personal information</h4>
+                                          </div>
+                                          <div id="rule-four">
+                                             <h3>Play Fair</h3>
+                                             <h4>No cheating or use of third party programs</h4>
+                                          </div>
+                                          <div id="rules-footer">
+                                             <h5>Players found not following the Club Penguin rules risk being banned.</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div id="processing-overlay" style="display:none;background-image:url(sites/default/modules/custom/penguin/img/processing-icon.gif);"></div>
+      <script type="text/javascript">
+         <!--//--><![CDATA[//><!--
+
+                     jQuery(document).ready(function($) {
+                             try{
+                                  window.metrics.stepTime("website","create_penguin");
+                             }catch(e){}
+                     });
+
+         //--><!]]>
+      </script>
+      <script type="text/javascript">
+         function goBack () {
+             window.history.back();
+         }
+      </script>
+      <script type="text/javascript" src="{{ url_for('static', filename='create/js/main.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='create/js/page.js') }}"></script>
+      <div id="cboxOverlay" style="display: none;"></div>
+      <div id="colorbox" class="" style="display: none; padding-bottom: 10px; padding-right: 0px;">
+         <div id="cboxWrapper">
+            <div>
+               <div id="cboxTopLeft" style="float: left;"></div>
+               <div id="cboxTopCenter" style="float: left;"></div>
+               <div id="cboxTopRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+               <div id="cboxMiddleLeft" style="float: left;"></div>
+               <div id="cboxContent" style="float: left;">
+                  <div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div>
+                  <div id="cboxLoadingOverlay" style="float: left;"></div>
+                  <div id="cboxLoadingGraphic" style="float: left;"></div>
+                  <div id="cboxTitle" style="float: left;"></div>
+                  <div id="cboxCurrent" style="float: left;"></div>
+                  <div id="cboxNext" style="float: left;"></div>
+                  <div id="cboxPrevious" style="float: left;"></div>
+                  <div id="cboxSlideshow" style="float: left;"></div>
+                  <div id="cboxClose" style="float: left;"></div>
+               </div>
+               <div id="cboxMiddleRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+               <div id="cboxBottomLeft" style="float: left;"></div>
+               <div id="cboxBottomCenter" style="float: left;"></div>
+               <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+         </div>
+         <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+      </div>
+      <div id="modal-overlay" style="opacity: 0.8;"></div>
+      <div id="modal-loading"></div>
+      <div id="modal-window">
+         <div id="modal-content"></div>
+      </div>
+      <script type="text/javascript" async="" src="https://secure-us.imrworldwide.com/novms/js/2/ggcmb390.js"></script>
+   </body>
+</html>
