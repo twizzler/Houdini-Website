@@ -8,7 +8,7 @@ This is the first version of the panel, it has not been used for production yet 
 If you want to modify the HTML content to put some details or change others go ahead and play with the website.  
 Please leave the footer as it is, I've spent quite some time making this, my effort is worth leaving it like that.  
 
-You can add me on discord for more help: Twizzler#1054  
+You can add me on discord for more help: kevin#6832  
 
 # Modules required
 
